@@ -1,0 +1,21 @@
+App:
+  port: 7111
+Alter:
+  Grafana:
+    hook_uri: /hook/grafana
+  AlertManager:
+    hook_uri: /hook/alertManager
+Notifier:
+  DingTalk:
+    hook_uri: /dingTalk
+    groups:
+      - name: 开发告警组
+        token: a token
+        secret: a secret
+  ShowDoc:
+    hook_uri: /showDoc
+    tokens:
+      - name: Sven
+        token: foo
+      - name: 老张
+        token: bar
